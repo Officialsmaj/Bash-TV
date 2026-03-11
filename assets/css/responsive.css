@@ -248,6 +248,23 @@
     .footer-social {
         justify-content: center;
     }
+
+    .footer-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-form {
+        max-width: 100%;
+    }
+
+    .footer-form-row {
+        flex-direction: column;
+    }
+
+    .footer-form-row button {
+        width: 100%;
+    }
     
     .about-features {
         grid-template-columns: 1fr;
