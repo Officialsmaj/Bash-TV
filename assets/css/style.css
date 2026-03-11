@@ -1000,80 +1000,80 @@ img {
 }
 
 /* ========================================
-   Facebook Images Section
+   YouTube Moments Section
    ======================================== */
-.facebook-section {
+.youtube-moments {
     background: var(--white);
     padding: 40px 0;
     margin: 40px 0;
 }
 
-.facebook-section .container {
-    max-width: var(--container-width);
-}
-
-.facebook-gallery {
+.youtube-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
-.facebook-item {
+.youtube-item {
     position: relative;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: var(--shadow);
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.facebook-item img {
+.youtube-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.youtube-item img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     transition: var(--transition);
 }
 
-.facebook-item:hover img {
-    transform: scale(1.05);
-}
-
-.facebook-item-overlay {
+.youtube-item-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    padding: 40px 15px 15px;
+    padding: 30px 18px 18px;
     color: var(--white);
 }
 
-.facebook-item-category {
-    font-size: 10px;
+.youtube-item-category {
+    font-size: 11px;
     text-transform: uppercase;
     font-weight: 600;
     color: var(--accent-color);
-    margin-bottom: 5px;
+    letter-spacing: 0.3px;
+    margin-bottom: 6px;
 }
 
-.facebook-item-title {
-    font-size: 14px;
+.youtube-item-title {
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.4;
 }
 
-.facebook-item-icon {
+.youtube-item-icon {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    background: rgba(0, 0, 0, 0.6);
-    color: var(--white);
-    width: 30px;
-    height: 30px;
+    top: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--dark-color);
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 16px;
+    box-shadow: var(--shadow);
 }
 
 /* ========================================
@@ -1085,7 +1085,7 @@ img {
 
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 25px;
 }
 
@@ -1451,10 +1451,8 @@ img {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: var(--primary-color);
-    color: var(--white);
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1463,9 +1461,12 @@ img {
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
-    transition: var(--transition);
+    transition: var(--transition), transform 0.25s ease;
     z-index: 999;
-    box-shadow: var(--shadow);
+    background: linear-gradient(135deg, var(--primary-color), #ff5a5a);
+    border: 2px solid var(--white);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    color: var(--white);
 }
 
 .scroll-top.visible {
@@ -1474,8 +1475,9 @@ img {
 }
 
 .scroll-top:hover {
-    background: var(--dark-color);
-    transform: translateY(-3px);
+    transform: translateY(-4px) scale(1.05);
+    background: linear-gradient(135deg, #ff5a5a, var(--primary-color));
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
 }
 
 /* ========================================
