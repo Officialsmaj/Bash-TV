@@ -120,7 +120,7 @@ img {
 
 .header-main-grid {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto minmax(240px, 1fr) auto;
     align-items: center;
     gap: 20px;
 }
@@ -210,6 +210,18 @@ img {
     font-size: 24px;
     cursor: pointer;
     color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu-toggle:hover {
+    color: var(--primary-color);
+    background: rgba(196, 0, 0, 0.1);
 }
 
 /* Navigation Menu */
@@ -330,38 +342,68 @@ img {
 /* Mobile Menu */
 .mobile-menu {
     display: none;
-    background: var(--white);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    box-shadow: var(--shadow);
-    padding: 20px;
-    z-index: 999;
+    position: fixed;
+    inset: 0;
+    background: rgba(7, 7, 7, 0.85);
+    padding: 70px 20px 20px;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 1500;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
 }
 
 .mobile-menu.active {
-    display: block;
+    display: flex;
+}
+
+.mobile-menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--dark-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu-close:hover {
+    transform: translateY(-2px);
 }
 
 .mobile-menu ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+}
+
+.mobile-menu li {
+    list-style: none;
 }
 
 .mobile-menu li a {
     display: block;
     padding: 12px 15px;
-    color: var(--text-color);
-    font-weight: 500;
-    border-bottom: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 6px;
     transition: var(--transition);
 }
 
-.mobile-menu li a:hover {
-    background: var(--light-color);
-    color: var(--primary-color);
+.mobile-menu li a:hover,
+.mobile-menu li a.active {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--accent-color);
 }
 
 /* ========================================
