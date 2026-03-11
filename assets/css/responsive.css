@@ -72,6 +72,15 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+
+    .trending-news-grid {
+        gap: 12px;
+    }
+
+    .trending-card {
+        grid-template-columns: 40px 1fr;
+        padding: 12px;
+    }
     
     .news-grid {
         grid-template-columns: repeat(2, 1fr);
