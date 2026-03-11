@@ -255,6 +255,8 @@ img {
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .nav-list li {
