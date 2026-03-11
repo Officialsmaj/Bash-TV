@@ -22,7 +22,7 @@
     <!-- Header -->
     <header class="header">
         <div class="header-top">
-            <div class="container">
+            <div class="container header-top-grid">
                 <div class="header-top-left">
                     <span><i class="far fa-calendar-alt"></i> Litinin, Maris 16, 2026</span>
                     <span><i class="far fa-clock"></i> 12:00 PM</span>
@@ -33,10 +33,11 @@
                     <a href="https://youtube.com/bashtvhausa" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     <a href="https://instagram.com/bashtvhausa" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
+            </div>
         </div>
         
         <div class="header-main">
-            <div class="container">
+            <div class="container header-main-grid">
                 <a href="index.html" class="logo">
                     <div class="logo-text">
                         BASH TV <span>MEDIA</span>
@@ -56,23 +57,30 @@
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
-        </div>
-        
-        <nav class="nav-menu">
-            <div class="container">
-                <ul>
-<li><a href="index.html" class="active">Shafin Farko</a></li>
-                    <li><a href="category.html?cat=Najeriya">Najeriya</a></li>
-                    <li><a href="category.html?cat=Duniya">Duniya</a></li>
-                    <li><a href="category.html?cat=Siyasa">Siyasa</a></li>
-                    <li><a href="category.html?cat=Wasanni">Wasanni</a></li>
-                    <li><a href="category.html?cat=Fasaha">Fasaha</a></li>
-                    <li><a href="category.html?cat=Bidiyo">Bidiyo</a></li>
-                    <li><a href="about.html">Game da Mu</a></li>
-                    <li><a href="contact.html">Tuntube Mu</a></li>
-                </ul>
             </div>
-        </nav>
+        </div>
+
+        <div class="menu-bar">
+            <div class="container">
+                <nav class="nav-menu">
+                    <div class="nav-highlight">
+                        <span>Live coverage straight from the Bash TV YouTube channel</span>
+                        <a href="https://www.youtube.com/@bashtvmedia" target="_blank" rel="noreferrer">Visit Channel</a>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="active">Shafin Farko</a></li>
+                        <li><a href="category.html?cat=Najeriya">Najeriya</a></li>
+                        <li><a href="category.html?cat=Duniya">Duniya</a></li>
+                        <li><a href="category.html?cat=Siyasa">Siyasa</a></li>
+                        <li><a href="category.html?cat=Wasanni">Wasanni</a></li>
+                        <li><a href="category.html?cat=Fasaha">Fasaha</a></li>
+                        <li><a href="category.html?cat=Bidiyo">Bidiyo</a></li>
+                        <li><a href="about.html">Game da Mu</a></li>
+                        <li><a href="contact.html">Tuntube Mu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     
     <!-- Mobile Menu -->
@@ -102,6 +110,7 @@
                     <li><a href="#">Masu zafin jini a Ukraine sun ci gaba da yaki - Rahoto...</a></li>
                 </ul>
             </div>
+        </div>
     </div>
     
     <!-- Hero News Slider -->
@@ -109,7 +118,7 @@
         <div class="container">
             <div class="hero-slider">
                 <div class="hero-slider-wrapper">
-                    <div class="hero-slide">
+                    <article class="hero-slide">
                         <img src="assets/images/banners/hero1.jpg" alt="Shugaba Buhari">
                         <div class="hero-slide-content">
                             <span class="hero-category">Najeriya</span>
@@ -118,8 +127,9 @@
                                 <span><i class="far fa-clock"></i> Maris 15, 2026</span>
                                 <span><i class="far fa-eye"></i> 1,250</span>
                             </div>
-                    </div>
-                    <div class="hero-slide">
+                        </div>
+                    </article>
+                    <article class="hero-slide">
                         <img src="assets/images/banners/hero2.jpg" alt="Wasanni">
                         <div class="hero-slide-content">
                             <span class="hero-category">Wasanni</span>
@@ -128,8 +138,9 @@
                                 <span><i class="far fa-clock"></i> Maris 14, 2026</span>
                                 <span><i class="far fa-eye"></i> 980</span>
                             </div>
-                    </div>
-                    <div class="hero-slide">
+                        </div>
+                    </article>
+                    <article class="hero-slide">
                         <img src="assets/images/banners/hero3.jpg" alt="Duniya">
                         <div class="hero-slide-content">
                             <span class="hero-category">Duniya</span>
@@ -138,10 +149,60 @@
                                 <span><i class="far fa-clock"></i> Maris 13, 2026</span>
                                 <span><i class="far fa-eye"></i> 756</span>
                             </div>
-                    </div>
+                        </div>
+                    </article>
+                </div>
                 <button class="slider-nav slider-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
                 <button class="slider-nav slider-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
                 <div class="slider-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Spotlight -->
+    <section class="youtube-spotlight">
+        <div class="container">
+            <div class="section-title">
+                <h2>Bidiyoyin Bash TV</h2>
+                <a href="https://www.youtube.com/@bashtvmedia" target="_blank" rel="noreferrer">Duba duk bidiyo <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="youtube-grid">
+                <div class="youtube-embed">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/NRb9AYHaB38" title="Bash TV latest video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <p>Latest scoop straight from the Bash TV YouTube channel. Subscribe to get Hausa-lined coverage of politics, sports, and breaking news.</p>
+                </div>
+                <div class="youtube-tiles">
+                    <article class="youtube-tile">
+                        <a href="https://www.youtube.com/watch?v=NRb9AYHaB38" target="_blank" rel="noreferrer">
+                            <img src="https://i.ytimg.com/vi/NRb9AYHaB38/hqdefault.jpg" alt="Bash TV - Video 1" loading="lazy">
+                            <div class="tile-meta">
+                                <h3>Netanyahu na son kashe Ayatullah Khamenei</h3>
+                                <span>10:25 • 58K views</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="youtube-tile">
+                        <a href="https://www.youtube.com/watch?v=sepE1xETsFc" target="_blank" rel="noreferrer">
+                            <img src="https://i.ytimg.com/vi/sepE1xETsFc/hqdefault.jpg" alt="Bash TV - Video 2" loading="lazy">
+                            <div class="tile-meta">
+                                <h3>Iran na kona Israila da rokoki</h3>
+                                <span>16:00 • 58K views</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="youtube-tile">
+                        <a href="https://www.youtube.com/watch?v=-PbO-tFj3jg" target="_blank" rel="noreferrer">
+                            <img src="https://i.ytimg.com/vi/-PbO-tFj3jg/hqdefault.jpg" alt="Bash TV - Video 3" loading="lazy">
+                            <div class="tile-meta">
+                                <h3>Yadda Amurka ta kashe 280,000 a Hiroshima</h3>
+                                <span>16:11 • 57K views</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
         </div>
     </section>
     
