@@ -576,11 +576,11 @@
     .scroll-top {
         bottom: 20px;
         right: 20px;
-        width: 40px;
-        height: 40px;
+        width: 44px;
+        height: 44px;
         font-size: 18px;
     }
-    
+
     .footer {
         padding: 30px 0 15px;
     }
@@ -614,10 +614,10 @@
     .header,
     .footer,
     .sidebar,
-    .scroll-top,
     .breaking-news,
     .slider-nav,
-    .video-play-btn {
+    .video-play-btn,
+    .scroll-top {
         display: none !important;
     }
     

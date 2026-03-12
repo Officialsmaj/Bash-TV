@@ -49,23 +49,33 @@ function updateDarkModeIcon(isDark) {
  */
 function initScrollToTop() {
     const scrollTopBtn = document.querySelector('.scroll-top');
-    
-    if (scrollTopBtn) {
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 300) {
-                scrollTopBtn.classList.add('visible');
-            } else {
-                scrollTopBtn.classList.remove('visible');
-            }
+
+    if (!scrollTopBtn) return;
+
+    const toggleVisibility = () => {
+        if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add('visible');
+        } else {
+            scrollTopBtn.classList.remove('visible');
+        }
+    };
+
+    window.addEventListener('scroll', toggleVisibility);
+    toggleVisibility();
+
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
         });
-        
-        scrollTopBtn.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    }
+    });
+
+    scrollTopBtn.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            scrollTopBtn.click();
+        }
+    });
 }
 
 /**
