@@ -106,6 +106,14 @@
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trending-hero-card {
+        grid-template-columns: 1fr;
+    }
+    
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
@@ -520,6 +528,16 @@
     
     .article-share {
         flex-wrap: wrap;
+    }
+
+    .header-actions {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .youtube-live-link {
+        width: 100%;
+        justify-content: center;
     }
     
     .scroll-top {
