@@ -16,10 +16,6 @@
         font-size: 24px;
     }
     
-    .news-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
     .facebook-gallery {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -74,8 +70,18 @@
     
     .content-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
-    
+
+    .content-main {
+        width: 100%;
+    }
+
+    .sidebar {
+        margin-top: 30px;
+        width: 100%;
+    }
+
     .sidebar {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -89,10 +95,6 @@
     .trending-card {
         grid-template-columns: 40px 1fr;
         padding: 12px;
-    }
-    
-    .news-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
     
     .news-list-item-image {
@@ -211,10 +213,6 @@
     
     .section-title h2 {
         font-size: 20px;
-    }
-    
-    .news-grid {
-        grid-template-columns: 1fr;
     }
     
     .news-card-image img {

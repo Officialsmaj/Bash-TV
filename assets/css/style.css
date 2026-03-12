@@ -1166,6 +1166,8 @@ img {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    width: 100%;
+    min-width: 0;
 }
 
 .news-card:hover {
@@ -1256,7 +1258,7 @@ img {
 /* Grid Layout for News Cards */
 .news-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
     margin-bottom: 40px;
 }
