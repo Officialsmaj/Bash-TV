@@ -1863,6 +1863,16 @@ img {
 
 .footer-about .logo {
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .footer-about .logo-text {
