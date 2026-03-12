@@ -101,13 +101,11 @@ img {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
-.header-focus {
+.header-brand {
     display: flex;
     align-items: center;
-    gap: 18px;
-    flex: 1;
-    justify-content: center;
-    min-width: 280px;
+    gap: 12px;
+    flex-shrink: 0;
 }
 
 .live-pill {
@@ -131,6 +129,12 @@ img {
     padding: 0;
     box-shadow: none;
     width: auto;
+}
+
+.header-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .header.banner-header .nav-list {
@@ -536,6 +540,38 @@ img {
 
 .nav-list li a.active {
     background: var(--dark-color);
+}
+
+/* ========================================
+   Mobile Header Adjustments
+   ======================================== */
+@media (max-width: 768px) {
+    .header-bar {
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+
+    .header-brand {
+        flex: 0 0 auto;
+        gap: 10px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-actions {
+        gap: 4px;
+    }
+
+    .search-toggle {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+        color: #fff;
+    }
 }
 
 /* Mobile Menu */
