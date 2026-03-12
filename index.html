@@ -1,4 +1,4 @@
-`   <!DOCTYPE html>
+﻿`   <!DOCTYPE html>
 <html lang="ha">
 <head>
     <meta charset="UTF-8">
@@ -20,111 +20,51 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="header-top">
-            <div class="container header-top-grid">
-                <div class="header-top-left">
-                    <span><i class="far fa-calendar-alt"></i> Litinin, Maris 16, 2026</span>
-                    <span><i class="far fa-clock"></i> 12:00 PM</span>
-                    <article class="youtube-tile">
-                        <a href="https://www.youtube.com/watch?v=MiLPpsB_nXg" target="_blank" rel="noreferrer">
-                            <img src="https://i.ytimg.com/vi/MiLPpsB_nXg/hqdefault.jpg" alt="Bash TV - Gandhi" loading="lazy">
-                            <div class="tile-meta">
-                                <h3>Cikakken Tarihin Mahatma Gandhi da Tafiyar Sauyi</h3>
-                                <span>25:00 â€¢ 57K views</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="youtube-tile">
-                        <a href="https://www.youtube.com/watch?v=va---cn4rIo" target="_blank" rel="noreferrer">
-                            <img src="https://i.ytimg.com/vi/va---cn4rIo/hqdefault.jpg" alt="Bash TV - Colonial History" loading="lazy">
-                            <div class="tile-meta">
-                                <h3>Mulkin mallakar Burtaniya a Najeriya da Dabarun Kasancewa</h3>
-                                <span>20:43 â€¢ 49K views</span>
-                            </div>
-                        </a>
-                    </article>
+    <header class="header banner-header">
+        <div class="container header-bar header-layout">
+            <a href="index.html" class="header-brand" aria-label="Bash TV Media homepage">
+                <span class="brand-mark" aria-hidden="true">B</span>
+                <div class="brand-labels">
+                    <span class="brand-name">Bash TV</span>
+                    <span class="brand-tagline">Media</span>
                 </div>
-                <div class="header-top-right">
-                    <a href="https://facebook.com/bashtvhausa" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/bashtvhausa" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://youtube.com/bashtvhausa" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="https://instagram.com/bashtvhausa" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="header-main">
-            <div class="container header-main-grid">
-                <a href="index.html" class="logo">
-                    <div class="logo-text">
-                        BASH TV <span>MEDIA</span>
-                    </div>
-                </a>
-                
-                <div class="header-search">
-                    <input type="text" placeholder="Bincika labarai..." id="search-input">
-                    <button type="button" aria-label="Search"><i class="fas fa-search"></i></button>
-                </div>
-                
-                <div class="header-actions">
-                    <a class="youtube-live-link" href="https://www.youtube.com/@bashtvmedia" target="_blank" rel="noreferrer">
-                        <span class="live-dot" aria-hidden="true"></span>
-                        Live Bash TV
-                        <small>Latest uploads</small>
-                    </a>
-                    <button type="button" class="dark-mode-toggle" aria-label="Toggle dark mode">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button type="button" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-bar">
-            <div class="container">
-                <nav class="nav-menu" aria-label="Primary navigation">
-                    <div class="nav-menu-top">
-                        <span class="nav-highlight-text">Live coverage straight from the Bash TV YouTube channel</span>
-                        <a class="nav-channel-link" href="https://www.youtube.com/@bashtvmedia" target="_blank" rel="noreferrer">
-                            Visit Channel <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <div class="nav-list-wrap">
-                        <ul class="nav-list">
-                            <li><a href="index.html">Shafin Farko</a></li>
-                            <li><a href="category.html?cat=Najeriya">Najeriya</a></li>
-                            <li><a href="category.html?cat=Duniya">Duniya</a></li>
-                            <li><a href="category.html?cat=Siyasa">Siyasa</a></li>
-                            <li><a href="category.html?cat=Wasanni">Wasanni</a></li>
-                            <li><a href="category.html?cat=Fasaha">Fasaha</a></li>
-                            <li><a href="category.html?cat=Bidiyo">Bidiyo</a></li>
-                            <li><a href="about.html">Game da Mu</a></li>
-                            <li><a href="contact.html">Tuntube Mu</a></li>
-                        </ul>
-                    </div>
+            </a>
+            <div class="header-focus">
+                <span class="live-pill" aria-label="Live television broadcast">
+                    <span class="live-dot" aria-hidden="true"></span>
+                    Live TV
+                </span>
+                <nav class="nav-menu header-nav" aria-label="Top sections">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="active">In Focus</a></li>
+                        <li><a href="category.html?cat=Iran">Iran war</a></li>
+                        <li><a href="category.html?cat=Golp">Golp country</a></li>
+                        <li><a href="category.html?cat=Ukraine">Ukraine</a></li>
+                    </ul>
                 </nav>
             </div>
+            <div class="header-actions banner-actions">
+                <button type="button" class="search-toggle" aria-label="Search Bash TV">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button type="button" class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
-        
         <div class="mobile-menu" aria-hidden="true">
-            <button class="mobile-menu-close" type="button" aria-label="Close menu"><i class="fas fa-times"></i></button>
+            <button class="mobile-menu-close" type="button" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
             <ul>
-                <li><a href="index.html">Shafin Farko</a></li>
-                <li><a href="category.html?cat=Najeriya">Najeriya</a></li>
-                <li><a href="category.html?cat=Duniya">Duniya</a></li>
-                <li><a href="category.html?cat=Siyasa">Siyasa</a></li>
-                <li><a href="category.html?cat=Wasanni">Wasanni</a></li>
-                <li><a href="category.html?cat=Fasaha">Fasaha</a></li>
-                <li><a href="category.html?cat=Bidiyo">Bidiyo</a></li>
-                <li><a href="about.html">Game da Mu</a></li>
-                <li><a href="contact.html">Tuntube Mu</a></li>
+                <li><a href="index.html">In Focus</a></li>
+                <li><a href="category.html?cat=Iran">Iran war</a></li>
+                <li><a href="category.html?cat=Golp">Golp country</a></li>
+                <li><a href="category.html?cat=Ukraine">Ukraine</a></li>
             </ul>
         </div>
     </header>
-    
+
     <!-- Breaking News Ticker -->
     <div class="breaking-news">
         <div class="container">
@@ -132,8 +72,8 @@
             <div class="breaking-ticker">
                 <ul>
                     <li><a href="#">Shugaba Buhari Ya Kawo Shawara Kan Yaki Da Fararen Hula - Karanta labari...</a></li>
-                    <li><a href="#">Yayyida Ƙungiyar Ƙwallon Ƙafa ta Najeriya Ta Ci Gasar - Nash...</a></li>
-                    <li><a href="#">Sabon Shiri Na Rage Talauci A Ƙasar Najeriya - An Sanar Da...</a></li>
+                    <li><a href="#">Yayyida Æ˜ungiyar Æ˜wallon Æ˜afa ta Najeriya Ta Ci Gasar - Nash...</a></li>
+                    <li><a href="#">Sabon Shiri Na Rage Talauci A Æ˜asar Najeriya - An Sanar Da...</a></li>
                     <li><a href="#">Masu zafin jini a Ukraine sun ci gaba da yaki - Rahoto...</a></li>
                 </ul>
             </div>
@@ -149,7 +89,7 @@
                         <img src="https://i.ytimg.com/vi/GgwmQIWoako/hqdefault.jpg" alt="Tarihin Putin Documentary">
                         <div class="hero-slide-content">
                             <span class="hero-category">Dokumentari</span>
-                            <h2 class="hero-title"><a href="https://www.youtube.com/watch?v=GgwmQIWoako" target="_blank" rel="noreferrer">🚨Tarihin Putin: Daga Dan Leƙen Asiri Zuwa Shugaban Ƙasa</a></h2>
+                            <h2 class="hero-title"><a href="https://www.youtube.com/watch?v=GgwmQIWoako" target="_blank" rel="noreferrer">ðŸš¨Tarihin Putin: Daga Dan LeÆ™en Asiri Zuwa Shugaban Æ˜asa</a></h2>
                             <div class="hero-meta">
                                 <span><i class="far fa-clock"></i> 34 min</span>
                                 <span><i class="far fa-eye"></i> 102K</span>
@@ -160,7 +100,7 @@
                         <img src="https://i.ytimg.com/vi/MdD8U5kQGBc/hqdefault.jpg" alt="Iran cluster bomb short">
                         <div class="hero-slide-content">
                             <span class="hero-category">Shorts</span>
-                            <h2 class="hero-title"><a href="https://www.youtube.com/watch?v=MdD8U5kQGBc" target="_blank" rel="noreferrer">🚨Iran na amfani da makami mai hadari (Cluster Bomb)</a></h2>
+                            <h2 class="hero-title"><a href="https://www.youtube.com/watch?v=MdD8U5kQGBc" target="_blank" rel="noreferrer">ðŸš¨Iran na amfani da makami mai hadari (Cluster Bomb)</a></h2>
                             <div class="hero-meta">
                                 <span><i class="far fa-clock"></i> 0:39</span>
                                 <span><i class="far fa-eye"></i> 77K</span>
@@ -171,7 +111,7 @@
                         <img src="https://i.ytimg.com/vi/NRb9AYHaB38/hqdefault.jpg" alt="Netanyahu discussion">
                         <div class="hero-slide-content">
                             <span class="hero-category">Duniya</span>
-                            <h2 class="hero-title"><a href="https://www.youtube.com/watch?v=NRb9AYHaB38" target="_blank" rel="noreferrer">🚨Iran na kona kasar Israila da rokoki / Netanyahu na son kashe Ayatullah</a></h2>
+                            <h2 class="hero-title"><a href="https://www.youtube.com/watch?v=NRb9AYHaB38" target="_blank" rel="noreferrer">ðŸš¨Iran na kona kasar Israila da rokoki / Netanyahu na son kashe Ayatullah</a></h2>
                             <div class="hero-meta">
                                 <span><i class="far fa-clock"></i> 16:25</span>
                                 <span><i class="far fa-eye"></i> 58K</span>
@@ -182,7 +122,7 @@
                         <img src="https://i.ytimg.com/vi/MiLPpsB_nXg/hqdefault.jpg" alt="Mahatma Gandhi Documentary">
                         <div class="hero-slide-content">
                             <span class="hero-category">History</span>
-                            <h2 class="hero-title"><a href="https://www.youtube.com/watch?v=MiLPpsB_nXg" target="_blank" rel="noreferrer">Cikakken Tarihin Mahatma Gandhi da Ƙoƙarin Zaman Lafiya</a></h2>
+                            <h2 class="hero-title"><a href="https://www.youtube.com/watch?v=MiLPpsB_nXg" target="_blank" rel="noreferrer">Cikakken Tarihin Mahatma Gandhi da Æ˜oÆ™arin Zaman Lafiya</a></h2>
                             <div class="hero-meta">
                                 <span><i class="far fa-clock"></i> 25 min</span>
                                 <span><i class="far fa-eye"></i> 57K</span>
@@ -236,7 +176,7 @@
                         <span class="showcase-badge">Insight</span>
                     </div>
                     <div class="showcase-body">
-                        <h3><a href="https://www.youtube.com/watch?v=GgwmQIWoako" target="_blank" rel="noreferrer">Tarihin Putin: Daga Dan Leƙen Asiri Zuwa Shugaban Ƙasa</a></h3>
+                        <h3><a href="https://www.youtube.com/watch?v=GgwmQIWoako" target="_blank" rel="noreferrer">Tarihin Putin: Daga Dan LeÆ™en Asiri Zuwa Shugaban Æ˜asa</a></h3>
                         <p>Bash TV unpacks the life, covert beginnings, and global ascent of Vladimir Putin.</p>
                         <div class="showcase-meta">
                             <span>34 min</span>
@@ -281,7 +221,7 @@
                             <img src="https://i.ytimg.com/vi/NRb9AYHaB38/hqdefault.jpg" alt="Bash TV - Video 1" loading="lazy">
                             <div class="tile-meta">
                                 <h3>Netanyahu na son kashe Ayatullah Khamenei</h3>
-                                <span>10:25 • 58K views</span>
+                                <span>10:25 â€¢ 58K views</span>
                             </div>
                         </a>
                     </article>
@@ -290,7 +230,7 @@
                             <img src="https://i.ytimg.com/vi/sepE1xETsFc/hqdefault.jpg" alt="Bash TV - Video 2" loading="lazy">
                             <div class="tile-meta">
                                 <h3>Iran na kona Israila da rokoki</h3>
-                                <span>16:04 • 58K views</span>
+                                <span>16:04 â€¢ 58K views</span>
                             </div>
                         </a>
                     </article>
@@ -299,7 +239,7 @@
                             <img src="https://i.ytimg.com/vi/-PbO-tFj3jg/hqdefault.jpg" alt="Bash TV - Video 3" loading="lazy">
                             <div class="tile-meta">
                                 <h3>Yadda Amurka ta kashe 280,000 a Hiroshima</h3>
-                                <span>16:11 • 57K views</span>
+                                <span>16:11 â€¢ 57K views</span>
                             </div>
                         </a>
                     </article>
@@ -307,8 +247,8 @@
                         <a href="https://www.youtube.com/watch?v=GgwmQIWoako" target="_blank" rel="noreferrer">
                             <img src="https://i.ytimg.com/vi/GgwmQIWoako/hqdefault.jpg" alt="Bash TV - Putin Documentary" loading="lazy">
                             <div class="tile-meta">
-                                <h3>🚨Tarihin Putin: Daga Dan Leƙen Asiri Zuwa Shugaban Ƙasa</h3>
-                                <span>34:00 • 102K views</span>
+                                <h3>ðŸš¨Tarihin Putin: Daga Dan LeÆ™en Asiri Zuwa Shugaban Æ˜asa</h3>
+                                <span>34:00 â€¢ 102K views</span>
                             </div>
                         </a>
                     </article>
@@ -316,8 +256,8 @@
                         <a href="https://www.youtube.com/watch?v=MdD8U5kQGBc" target="_blank" rel="noreferrer">
                             <img src="https://i.ytimg.com/vi/MdD8U5kQGBc/hqdefault.jpg" alt="Bash TV - Short" loading="lazy">
                             <div class="tile-meta">
-                                <h3>🚨Iran na amfani da makami mai hadari (Cluster Bomb)</h3>
-                                <span>0:39 • 77K views</span>
+                                <h3>ðŸš¨Iran na amfani da makami mai hadari (Cluster Bomb)</h3>
+                                <span>0:39 â€¢ 77K views</span>
                             </div>
                         </a>
                     </article>
@@ -364,12 +304,12 @@
                                     <span class="news-card-category">Wasanni</span>
                                 </div>
                                 <div class="news-card-content">
-                                    <h3 class="news-card-title"><a href="article.html?id=2">Yayyida Ƙungiyar Ƙwallon Ƙafa ta Najeriya Ta Ci Gasar</a></h3>
+                                    <h3 class="news-card-title"><a href="article.html?id=2">Yayyida Æ˜ungiyar Æ˜wallon Æ˜afa ta Najeriya Ta Ci Gasar</a></h3>
                                     <div class="news-card-meta">
                                         <span><i class="far fa-clock"></i> Maris 14, 2026</span>
                                         <span><i class="far fa-eye"></i> 980</span>
                                     </div>
-                                    <p class="news-card-excerpt">Ƙungiyar Ƙwallon Ƙafa ta Najeriya ta lashe gasar cin kofin Afirka ta yamma...</p>
+                                    <p class="news-card-excerpt">Æ˜ungiyar Æ˜wallon Æ˜afa ta Najeriya ta lashe gasar cin kofin Afirka ta yamma...</p>
                                     <a href="article.html?id=2" class="news-card-readmore">Karatu <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </article>
@@ -381,7 +321,7 @@
                                     <span class="news-card-category">Duniya</span>
                                 </div>
                                 <div class="news-card-content">
-                                    <h3 class="news-card-title"><a href="article.html?id=3">Shugaban Ƙasar Amurka Ya Bayyana Shawara Kan Yaki Da Shinge</a></h3>
+                                    <h3 class="news-card-title"><a href="article.html?id=3">Shugaban Æ˜asar Amurka Ya Bayyana Shawara Kan Yaki Da Shinge</a></h3>
                                     <div class="news-card-meta">
                                         <span><i class="far fa-clock"></i> Maris 13, 2026</span>
                                         <span><i class="far fa-eye"></i> 756</span>
@@ -398,12 +338,12 @@
                                     <span class="news-card-category">Najeriya</span>
                                 </div>
                                 <div class="news-card-content">
-                                    <h3 class="news-card-title"><a href="article.html?id=4">Sabon Shiri Na Rage Talauci A Ƙasar Najeriya</a></h3>
+                                    <h3 class="news-card-title"><a href="article.html?id=4">Sabon Shiri Na Rage Talauci A Æ˜asar Najeriya</a></h3>
                                     <div class="news-card-meta">
                                         <span><i class="far fa-clock"></i> Maris 12, 2026</span>
                                         <span><i class="far fa-eye"></i> 543</span>
                                     </div>
-                                    <p class="news-card-excerpt">Gwamnati ta sanar da sabon shiri na rage talauci a fadin ƙasar...</p>
+                                    <p class="news-card-excerpt">Gwamnati ta sanar da sabon shiri na rage talauci a fadin Æ™asar...</p>
                                     <a href="article.html?id=4" class="news-card-readmore">Karatu <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </article>
@@ -439,7 +379,7 @@
                                 </div>
                                 <div class="news-list-item-content">
                                     <span class="news-card-category">Wasanni</span>
-                                    <h3 class="news-card-title"><a href="article.html?id=6">Wasannin Biki: Matasan Ƙasar Masu Basira</a></h3>
+                                    <h3 class="news-card-title"><a href="article.html?id=6">Wasannin Biki: Matasan Æ˜asar Masu Basira</a></h3>
                                     <div class="news-card-meta">
                                         <span><i class="far fa-clock"></i> Maris 10, 2026</span>
                                         <span><i class="far fa-eye"></i> 321</span>
@@ -453,7 +393,7 @@
                                 </div>
                                 <div class="news-list-item-content">
                                     <span class="news-card-category">Najeriya</span>
-                                    <h3 class="news-card-title"><a href="article.html?id=7">Sabon Shiri Na Ilimi A Ƙasar Najeriya</a></h3>
+                                    <h3 class="news-card-title"><a href="article.html?id=7">Sabon Shiri Na Ilimi A Æ˜asar Najeriya</a></h3>
                                     <div class="news-card-meta">
                                         <span><i class="far fa-clock"></i> Maris 9, 2026</span>
                                         <span><i class="far fa-eye"></i> 287</span>
@@ -586,7 +526,7 @@
                     <img src="https://i.ytimg.com/vi/GgwmQIWoako/hqdefault.jpg" alt="Bash TV - Putin Documentary" loading="lazy">
                     <div class="youtube-item-overlay">
                         <span class="youtube-item-category">Dokumentari</span>
-                        <h3 class="youtube-item-title">Tarihin Putin: Daga Dan LeÆ™en Asiri</h3>
+                        <h3 class="youtube-item-title">Tarihin Putin: Daga Dan LeÃ†â„¢en Asiri</h3>
                     </div>
                     <span class="youtube-item-icon"><i class="fab fa-youtube"></i></span>
                 </div>
@@ -626,7 +566,7 @@
                         <div class="video-play-btn"><i class="fas fa-play"></i></div>
                     </div>
                     <div class="video-card-content">
-                        <h3 class="video-card-title"><a href="https://www.youtube.com/watch?v=GgwmQIWoako" target="_blank" rel="noreferrer">🚨Tarihin Putin: Daga Dan Leƙen Asiri Zuwa Shugaban Ƙasa</a></h3>
+                        <h3 class="video-card-title"><a href="https://www.youtube.com/watch?v=GgwmQIWoako" target="_blank" rel="noreferrer">ðŸš¨Tarihin Putin: Daga Dan LeÆ™en Asiri Zuwa Shugaban Æ˜asa</a></h3>
                         <div class="video-card-meta">
                             <span><i class="far fa-clock"></i> 34 min</span>
                             <span><i class="far fa-eye"></i> 102K</span>
@@ -640,7 +580,7 @@
                         <div class="video-play-btn"><i class="fas fa-play"></i></div>
                     </div>
                     <div class="video-card-content">
-                        <h3 class="video-card-title"><a href="https://www.youtube.com/watch?v=NRb9AYHaB38" target="_blank" rel="noreferrer">🚨Netanyahu da Rokoki</a></h3>
+                        <h3 class="video-card-title"><a href="https://www.youtube.com/watch?v=NRb9AYHaB38" target="_blank" rel="noreferrer">ðŸš¨Netanyahu da Rokoki</a></h3>
                         <div class="video-card-meta">
                             <span><i class="far fa-clock"></i> 16:25</span>
                             <span><i class="far fa-eye"></i> 58K</span>
@@ -654,7 +594,7 @@
                         <div class="video-play-btn"><i class="fas fa-play"></i></div>
                     </div>
                     <div class="video-card-content">
-                        <h3 class="video-card-title"><a href="https://www.youtube.com/watch?v=sepE1xETsFc" target="_blank" rel="noreferrer">🚨Iran na kona kasar Israila da rokoki</a></h3>
+                        <h3 class="video-card-title"><a href="https://www.youtube.com/watch?v=sepE1xETsFc" target="_blank" rel="noreferrer">ðŸš¨Iran na kona kasar Israila da rokoki</a></h3>
                         <div class="video-card-meta">
                             <span><i class="far fa-clock"></i> 16:04</span>
                             <span><i class="far fa-eye"></i> 58K</span>
@@ -699,13 +639,13 @@
                 <h2>Sabbin Hotuna & Bidiyon Bash TV</h2>
                 <a href="https://www.youtube.com/@bashtvmedia" target="_blank" rel="noreferrer">Duba tashar YouTube <i class="fas fa-arrow-right"></i></a>
             </div>
-            <p class="section-subtitle">Playlist ɗin Bash TV Media yana sabuntawa kai tsaye da labarai, hira da rahotannin Hausa. Bi shi domin ganin duk sababbin bidiyo da hotuna.</p>
+            <p class="section-subtitle">Playlist É—in Bash TV Media yana sabuntawa kai tsaye da labarai, hira da rahotannin Hausa. Bi shi domin ganin duk sababbin bidiyo da hotuna.</p>
             <div class="media-hub-grid">
                 <div class="playlist-card">
                     <iframe src="https://www.youtube.com/embed/videoseries?list=UUy8ZkVmZ-iPcS8YlQ7A8_3Q" title="Bash TV uploads" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
                     <div class="playlist-meta">
                         <h3>Tashar Bash TV Media</h3>
-                        <p>Playlist ɗin na nuna ɗaukacin bidiyon da Bash TV ke fitarwa, daga biga zuwa shorts.</p>
+                        <p>Playlist É—in na nuna É—aukacin bidiyon da Bash TV ke fitarwa, daga biga zuwa shorts.</p>
                     </div>
                 </div>
                 <div class="media-gallery-grid">
@@ -716,9 +656,9 @@
                                 <span class="media-card-tag">Dokumentari</span>
                             </div>
                             <div class="media-card-content">
-                                <h3>Tarihin Putin: Daga Dan Leƙen Asiri Zuwa Shugaban Ƙasa</h3>
+                                <h3>Tarihin Putin: Daga Dan LeÆ™en Asiri Zuwa Shugaban Æ˜asa</h3>
                                 <div class="media-card-meta">
-                                    <span>34:00 • 102K views</span>
+                                    <span>34:00 â€¢ 102K views</span>
                                 </div>
                             </div>
                         </a>
@@ -732,7 +672,7 @@
                             <div class="media-card-content">
                                 <h3>Netanyahu da Rokoki: Sabon Rahoton Duniya</h3>
                                 <div class="media-card-meta">
-                                    <span>16:25 • 58K views</span>
+                                    <span>16:25 â€¢ 58K views</span>
                                 </div>
                             </div>
                         </a>
@@ -746,7 +686,7 @@
                             <div class="media-card-content">
                                 <h3>Iran na kona kasar Israila da rokoki</h3>
                                 <div class="media-card-meta">
-                                    <span>16:04 • 58K views</span>
+                                    <span>16:04 â€¢ 58K views</span>
                                 </div>
                             </div>
                         </a>
@@ -760,7 +700,7 @@
                             <div class="media-card-content">
                                 <h3>Iran na amfani da makami mai hadari (Cluster Bomb)</h3>
                                 <div class="media-card-meta">
-                                    <span>0:39 • 77K views</span>
+                                    <span>0:39 â€¢ 77K views</span>
                                 </div>
                             </div>
                         </a>
@@ -781,10 +721,10 @@
                 <form class="footer-form" action="#" method="post">
                     <label for="footer-email">Samun sanarwar kai tsaye</label>
                     <div class="footer-form-row">
-                        <input id="footer-email" type="email" name="email" placeholder="Email ɗinka" required>
+                        <input id="footer-email" type="email" name="email" placeholder="Email É—inka" required>
                         <button type="submit">Aika</button>
                     </div>
-                    <small>Muna adana bayanan ku kuma ba za mu jeɓa ba.</small>
+                    <small>Muna adana bayanan ku kuma ba za mu jeÉ“a ba.</small>
                 </form>
             </div>
             <div class="footer-grid">
@@ -831,7 +771,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Bash TV Media. Duk haƙƙi an adana su. | <a href="#">Sirrin Yanar Gizo</a></p>
+                <p>&copy; 2026 Bash TV Media. Duk haÆ™Æ™i an adana su. | <a href="#">Sirrin Yanar Gizo</a></p>
             </div>
         </div>
     </footer>
@@ -849,3 +789,4 @@
     <script src="assets/js/news-loader.js"></script>
     </body>
 </html>
+

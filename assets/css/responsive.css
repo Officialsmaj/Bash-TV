@@ -42,11 +42,20 @@
     .header-search {
         display: none;
     }
-    
+
     .menu-toggle {
         display: block;
     }
-    
+
+    .header.banner-header {
+        padding: 0 15px;
+    }
+
+    .header-focus {
+        width: 100%;
+        justify-content: space-between;
+    }
+
     .nav-menu {
         display: none;
     }
@@ -313,6 +322,36 @@
     .category-filters {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .header-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header-focus {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .header-top-nav {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .banner-actions {
+        width: 100%;
+        justify-content: space-between;
     }
 
     .header-main-grid {
