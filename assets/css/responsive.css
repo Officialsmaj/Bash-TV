@@ -39,10 +39,6 @@
         display: none;
     }
 
-    .menu-toggle {
-        display: block;
-    }
-
     .header.minimal-header {
         padding: 0 15px;
     }

@@ -339,6 +339,38 @@ img {
     justify-self: end;
 }
 
+.header-nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    padding: 6px 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.header-nav .nav-link:hover,
+.header-nav .nav-link.active {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
 .youtube-live-link {
     display: inline-flex;
     align-items: center;
@@ -406,7 +438,6 @@ img {
 }
 
 .header.minimal-header .menu-toggle {
-    display: inline-flex;
     border-radius: 14px;
     border: 1px solid var(--header-button-border);
     background: var(--header-button-bg);

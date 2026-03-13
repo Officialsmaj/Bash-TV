@@ -102,7 +102,7 @@ function initStickyNav() {
  * Sets the active class on the current page link.
  */
 function setActiveNavLinks() {
-    const links = document.querySelectorAll('.nav-menu .nav-list a, .mobile-menu ul li a');
+    const links = document.querySelectorAll('.header-nav .nav-link, .nav-menu .nav-list a, .mobile-menu ul li a');
     const pathname = window.location.pathname.split('/').pop() || 'index.html';
     const normalizedCurrent = pathname.split('?')[0];
 
