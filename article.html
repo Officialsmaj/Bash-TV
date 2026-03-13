@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bash TV Media - Karanta labari">
-    <meta property="og:title" content="Shugaba Buhari Ya Kawo Shawara - Bash TV Media">
+    <meta property="og:title" content="Bash TV Media - Sabah Article">
     <meta property="og:type" content="article">
-    <title>Shugaba Buhari Ya Kawo Shawara - Bash TV Media</title>
+    <meta name="theme-color" content="#030617">
+    <title>Article - Bash TV Media</title>
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-<body>
+<body class="inner-page article-page">
     <!-- Header -->
     <header class="header minimal-header">
         <div class="container header-bar header-layout minimal">
@@ -32,15 +33,28 @@
                     <li><a class="nav-link" href="category.html?cat=Wasanni">Wasanni</a></li>
                     <li><a class="nav-link" href="category.html?cat=Fasaha">Fasaha</a></li>
                     <li><a class="nav-link" href="category.html?cat=Bidiyo">Bidiyo</a></li>
+                    <li><a class="nav-link" href="live.html">Live TV</a></li>
                     <li><a class="nav-link" href="about.html">Game da Mu</a></li>
                     <li><a class="nav-link" href="contact.html">Tuntube Mu</a></li>
                 </ul>
             </nav>
             <div class="header-actions minimal-actions">
+                <button type="button" class="search-toggle" aria-label="Open search panel">
+                    <i class="fas fa-search"></i>
+                </button>
                 <button type="button" class="menu-toggle" aria-label="Open navigation menu">
                     <i class="fas fa-bars" aria-hidden="true"></i>
                 </button>
             </div>
+        </div>
+        <div class="header-search-panel" aria-hidden="true">
+            <div class="search-panel-inner">
+                <input type="search" placeholder="Search news..." aria-label="Search news">
+                <button type="button" class="search-panel-close" aria-label="Close search">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="header-search-results" class="search-results"></div>
         </div>
         <div class="mobile-menu" aria-hidden="true">
             <button class="mobile-menu-close" type="button" aria-label="Close menu">
@@ -54,136 +68,58 @@
                 <li><a href="category.html?cat=Wasanni">Wasanni</a></li>
                 <li><a href="category.html?cat=Fasaha">Fasaha</a></li>
                 <li><a href="category.html?cat=Bidiyo">Bidiyo</a></li>
+                <li><a href="live.html">Live TV</a></li>
                 <li><a href="about.html">Game da Mu</a></li>
                 <li><a href="contact.html">Tuntube Mu</a></li>
             </ul>
         </div>
     </header>
-    
-    <!-- Page Banner -->
-    <div class="page-banner">
-        <div class="container">
-            <div class="breadcrumb">
-                <a href="index.html">Shafin Farko</a> <span>/</span> <a href="category.html?cat=Najeriya">Najeriya</a> <span>/</span> Labari
-            </div>
-        </div>
-    </div>
-    
-    <!-- Article Section -->
-    <section class="article-section">
-        <div class="container">
-            <div class="article-container">
-                <header class="article-header">
-                    <span class="article-category">Najeriya</span>
-                    <h1 class="article-title">Shugaba Buhari Ya Kawo Shawara Kan Yaki Da Fararen Hula</h1>
-                    <div class="article-meta">
-                        <span><i class="far fa-clock"></i> Maris 15, 2026</span>
-                        <span><i class="far fa-eye"></i> 1,250</span>
-                        <span><i class="fas fa-share-alt"></i> Rabawa:</span>
-                    </div>
-                </header>
-                
-                <div class="article-image">
-                    <img src="assets/images/news/news1.jpg" alt="Shugaba Buhari">
-                </div>
-                
-                <div class="article-content">
-                    <p>Shugaba Muhammadu Buhari ya ce gwamnati za ta biya duk wata hanya don tabbatar da zaman lafiya a kasar. Wannan shiri ya zo ne bayan taron da aka gudanar da manyan jami'ai na tsaro a Abuja.</p>
-                    
-                    <p>A taron, Shugaba ya bayyana cewa za a kara kara kaimi na 'yancin kai kansa a fadin ƙasar. "Za mu tabbatar da cewa kowane ɗan Nigeria yana rayuwa cikin zaman lafiya," in ji Shugaba.</p>
-                    
-                    <h2>Matakai Da Za A ɗauka</h2>
-                    <p>Gwamnati ta fayyace manyan matakai da za a ɗauka, waɗanda suka haɗa da:</p>
-                    <ul>
-                        <li>Ƙara yawan sojoji a yankunan da ke fuskantar matsaloli</li>
-                        <li>Inganta tsarin intanet da sadarwa</li>
-                        <li>Ilmar da al'umma kan rashin laifi</li>
-                        <li>Sa hannun jaridun Najeriya a yaɗa labarai</li>
-                    </ul>
-                    
-                    <h2>Magana daga 'Yan Gudun Hijira</h2>
-                    <p>Wasu 'yan gudun hijira sun ce sun yi farin ciki da wannan shiri, kuma suna fatan za a aiwatar da shi da sauri.</p>
-                    
-                    <p>"Muna fatan za a ga canje-canjen a rayuwarmu," in ji wani mazaocin da ya fadi sunansa.</p>
-                    
-                    <h3>Kar Hukumar Kasa</h3>
-                    <p>Kungiyoyin kasa da kasa sun yi magana game da wannan shiri, suna nuna goyon bayan gwamnatin Najeriya a ƙoƙarin tabbatar da zaman lafiya.</p>
-                </div>
-                
-                <div class="article-tags">
-                    <span>Tags:</span>
-                    <a href="#">Najeriya</a>
-                    <a href="#">Tsaro</a>
-                    <a href="#">Buhari</a>
-                    <a href="#">Gwamnati</a>
-                </div>
-                
-                <div class="article-share">
-                    <span>Rabawa:</span>
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                </div>
-                
-                <!-- Related Articles -->
-                <div class="related-articles">
-                    <h3>Labarai Masu Alaƙa</h3>
-                    <div class="news-grid">
-                        <article class="news-card">
-                            <div class="news-card-image">
-                                <a href="article.html?id=4">
-                                    <img src="assets/images/news/news4.jpg" alt="Labari" loading="lazy">
-                                </a>
-                                <span class="news-card-category">Najeriya</span>
-                            </div>
-                            <div class="news-card-content">
-                                <h3 class="news-card-title"><a href="article.html?id=4">Sabon Shiri Na Rage Talauci</a></h3>
-                            </div>
-                        </article>
-                        <article class="news-card">
-                            <div class="news-card-image">
-                                <a href="article.html?id=7">
-                                    <img src="assets/images/news/news7.jpg" alt="Labari" loading="lazy">
-                                </a>
-                                <span class="news-card-category">Najeriya</span>
-                            </div>
-                            <div class="news-card-content">
-                                <h3 class="news-card-title"><a href="article.html?id=7">Sabon Shiri Na Ilimi</a></h3>
-                            </div>
-                        </article>
-                        <article class="news-card">
-                            <div class="news-card-image">
-                                <a href="article.html?id=12">
-                                    <img src="assets/images/news/news12.jpg" alt="Labari" loading="lazy">
-                                </a>
-                                <span class="news-card-category">Najeriya</span>
-                            </div>
-                            <div class="news-card-content">
-                                <h3 class="news-card-title"><a href="article.html?id=12">Tattalin Arziki</a></h3>
-                            </div>
-                        </article>
-                    </div>
+
+    <main>
+        <section class="category-hero article-hero">
+            <div class="container">
+                <h1 id="article-title">Loading...</h1>
+                <div id="article-meta" class="article-meta">
+                    <span id="article-category">Category</span>
+                    <span id="article-date">Maris 1, 2026</span>
+                    <span id="article-views">0 views</span>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
+        </section>
+        <section class="container article-detail">
+            <div id="article-image" class="article-image"></div>
+            <div id="article-body" class="article-body"></div>
+            <div id="article-tags" class="article-tags"></div>
+            <div class="ad-banner">
+                Article ad placeholder
+            </div>
+            <div class="related-articles">
+                <h3>Related Stories</h3>
+                <div id="related-articles" class="news-card-grid"></div>
+            </div>
+            <div class="disqus-card">
+                <h3>Share your thoughts</h3>
+                <div id="disqus_thread"></div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-cta">
                 <div>
                     <p class="subheading">Bash TV Media</p>
-                    <h3>Tattaunawa da Labarai a kowane lokaci</h3>
-                    <p>Bash TV Media shine muhawara mafi girma na labarai Hausa akan intanet.</p>
+                    <h3>Labarai masu inganci ga al'ummar Hausa</h3>
+                    <p>Muna rarraba labarai na gaskiya daga Najeriya, duniya da maɓuɓɓugan fasaha tare da tsaro da adalci.</p>
+                    <p class="contact-info">Email: <a href="mailto:info@bashtvmedia.com">info@bashtvmedia.com</a> | +234 800 123 4567</p>
                 </div>
-                <form class="footer-form" action="#" method="post">
-                    <label for="footer-email">Samun sanarwar kai tsaye</label>
+                <form class="footer-form">
+                    <label for="footer-email">Samun sanarwa</label>
                     <div class="footer-form-row">
-                        <input id="footer-email" type="email" name="email" placeholder="Email ƙinka" required>
+                        <input id="footer-email" type="email" name="email" placeholder="Email ɗinka" required>
                         <button type="submit">Aika</button>
                     </div>
-                    <small>Muna adana bayanan ku kuma ba za mu sayar da su ba.</small>
+                    <small>Muna kiyaye sirrin ku.</small>
                 </form>
             </div>
             <div class="footer-grid">
@@ -192,48 +128,50 @@
                         <img src="assets/images/logo.png" alt="Bash TV logo" class="footer-logo">
                         <div class="logo-text">BASH TV <span>MEDIA</span></div>
                     </div>
-                    <p>Bash TV Media shine muhawara mafi girma na labarai Hausa akan intanet.</p>
+                    <p>Gidan labarai na zamani da ke ba da rahotanni, nazari da shirye-shirye na bidiyo ga masu sauraro a duniya.</p>
                 </div>
                 <div class="footer-column">
-                    <h3>Menu</h3>
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Shafin Farko</a></li>
-                        <li><a href="category.html?cat=Najeriya">Najeriya</a></li>
-                        <li><a href="category.html?cat=Duniya">Duniya</a></li>
-                        <li><a href="category.html?cat=Siyasa">Siyasa</a></li>
-                        <li><a href="category.html?cat=Wasanni">Wasanni</a></li>
+                        <li><a href="live.html">Live TV</a></li>
+                        <li><a href="advertise.html">Advertise With Us</a></li>
+                        <li><a href="submit-news.html">Submit News</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Sauran Sashe</h3>
+                    <h3>Legal</h3>
                     <ul>
-                        <li><a href="category.html?cat=Fasaha">Fasaha</a></li>
-                        <li><a href="category.html?cat=Bidiyo">Bidiyo</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                         <li><a href="about.html">Game da Mu</a></li>
                         <li><a href="contact.html">Tuntube Mu</a></li>
                     </ul>
                 </div>
             </div>
+            <div class="footer-social">
+                <a href="https://facebook.com/bashtvhausa" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@bashtvmedia" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://t.me/bashtvmedia" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.tiktok.com/@bashtvmedia" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="footer-ad ad-banner">
+                Footer ad placeholder
+            </div>
             <div class="footer-bottom">
-                <div class="footer-social">
-                    <a href="https://facebook.com/bashtvhausa" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://m.youtube.com/@bashtvmedia" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="https://t.me/bashtvmedia" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
-                    <a href="https://www.instagram.com/bashtvmedia" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
-                <p>© 2026 Bash TV Media. Duk haƙƙi an adana</p>
+                <p>© 2026 Bash TV Media. Duk haƙƙi an adana.</p>
+                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
     <div class="scroll-top" aria-label="Scroll to top" role="button" tabindex="0">
         <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </div>
 
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/article-feed.js" defer></script>
+    <script src="assets/js/article-detail.js" defer></script>
+    <script src="assets/js/menu.js" defer></script>
+    <script type="application/ld+json" id="article-schema"></script>
 </body>
 </html>
-
-

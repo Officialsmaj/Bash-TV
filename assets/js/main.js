@@ -5,44 +5,12 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functions
-    initDarkMode();
     initScrollToTop();
     initLazyLoading();
     initSearchFunction();
     initImageHoverEffects();
     initHeaderScroll();
 });
-
-/**
- * Dark Mode Toggle
- */
-function initDarkMode() {
-    const darkModeToggle = document.querySelector('.dark-mode-toggle');
-    const body = document.body;
-    
-    // Check for saved preference
-    const savedTheme = localStorage.getItem('bashtv-theme');
-    if (savedTheme === 'dark') {
-        body.classList.add('dark-mode');
-        updateDarkModeIcon(true);
-    }
-    
-    if (darkModeToggle) {
-        darkModeToggle.addEventListener('click', function() {
-            body.classList.toggle('dark-mode');
-            const isDark = body.classList.contains('dark-mode');
-            localStorage.setItem('bashtv-theme', isDark ? 'dark' : 'light');
-            updateDarkModeIcon(isDark);
-        });
-    }
-}
-
-function updateDarkModeIcon(isDark) {
-    const toggle = document.querySelector('.dark-mode-toggle');
-    if (toggle) {
-        toggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-    }
-}
 
 /**
  * Scroll to Top Button

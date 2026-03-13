@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     initMobileMenu();
     initStickyNav();
+    initSearchPanel();
 });
 
 /**
@@ -67,7 +68,7 @@ function initMobileMenu() {
     });
 
     window.addEventListener('resize', function () {
-        if (window.innerWidth > 992) {
+        if (window.innerWidth > 768) {
             toggleMenu(false);
         }
     });
@@ -113,6 +114,54 @@ function setActiveNavLinks() {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
+        }
+    });
+}
+
+function initSearchPanel() {
+    const searchPanel = document.querySelector('.header-search-panel');
+    const searchToggle = document.querySelector('.search-toggle');
+    const searchClose = document.querySelector('.search-panel-close');
+    const searchInput = searchPanel?.querySelector('input[type=\"search\"]');
+
+    function openPanel() {
+        searchPanel?.classList.add('active');
+        searchPanel?.setAttribute('aria-hidden', 'false');
+        searchInput?.focus();
+    }
+
+    function closePanel() {
+        searchPanel?.classList.remove('active');
+        searchPanel?.setAttribute('aria-hidden', 'true');
+    }
+
+    searchToggle?.addEventListener('click', function () {
+        if (searchPanel?.classList.contains('active')) {
+            closePanel();
+            window.BashTV?.clearSearchResults();
+        } else {
+            openPanel();
+        }
+    });
+
+    searchClose?.addEventListener('click', function () {
+        closePanel();
+        window.BashTV?.clearSearchResults();
+    });
+
+    searchInput?.addEventListener('input', function (event) {
+        const query = event.target.value.trim();
+        if (query.length === 0) {
+            window.BashTV?.clearSearchResults();
+            return;
+        }
+        window.BashTV?.searchArticles(query);
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closePanel();
+            window.BashTV?.clearSearchResults();
         }
     });
 }
